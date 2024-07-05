@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-05T17:00:38.182910" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc" source="/Users/shilpashreemr/WebAutomation/NewProj/Testcases/tc.robot">
+<test id="s1-t1" name="OpenWebBrowserTest" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-05T17:00:38.314874" level="INFO">Opening browser 'safari' to base url 'https://www.practo.com'.</msg>
+<arg>https://www.practo.com</arg>
+<arg>safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-05T17:00:38.314695" elapsed="2.683521"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-05T17:00:40.999011" elapsed="0.040583"/>
+</kw>
+<status status="PASS" start="2024-07-05T17:00:38.313943" elapsed="2.726054"/>
+</test>
+<test id="s1-t2" name="SetLocation" line="8">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-05T17:00:41.042113" level="INFO">Typing text 'Banglore' into text field 'xpath://input[@data-qa-id="omni-searchbox-locality"]'.</msg>
+<arg>xpath://input[@data-qa-id="omni-searchbox-locality"]</arg>
+<arg>Banglore</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-05T17:00:41.041190" elapsed="0.175155"/>
+</kw>
+<status status="PASS" start="2024-07-05T17:00:41.040401" elapsed="0.176182"/>
+</test>
+<test id="s1-t3" name="SearchDoc" line="10">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-05T17:00:41.217374" level="INFO">Typing text 'Dentist' into text field 'xpath://*[@id="c-omni-container"]/div/div[2]/div[1]/input'.</msg>
+<arg>xpath://*[@id="c-omni-container"]/div/div[2]/div[1]/input</arg>
+<arg>Dentist</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-05T17:00:41.217159" elapsed="0.087666"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://div[@data-qa-id='omni-suggestion-listing']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-05T17:00:41.305086" elapsed="0.638896"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-05T17:00:41.944484" level="INFO">Clicking element 'xpath://div[@data-qa-id='omni-suggestion-listing']'.</msg>
+<arg>xpath://div[@data-qa-id='omni-suggestion-listing']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-05T17:00:41.944257" elapsed="0.029676"/>
+</kw>
+<status status="PASS" start="2024-07-05T17:00:41.216848" elapsed="0.757321"/>
+</test>
+<test id="s1-t4" name="SelectDoc" line="14">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://h2[@data-qa-id="doctor_name"]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-05T17:00:41.974936" elapsed="0.868027"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-05T17:00:42.843580" level="INFO">Clicking element 'xpath://h2[@data-qa-id="doctor_name"]'.</msg>
+<arg>xpath://h2[@data-qa-id="doctor_name"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-05T17:00:42.843264" elapsed="3.896917"/>
+</kw>
+<status status="PASS" start="2024-07-05T17:00:41.974435" elapsed="4.765926"/>
+</test>
+<test id="s1-t5" name="BookSlot" line="20">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://div[@data-qa-id="slot_time"]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-05T17:00:46.740834" elapsed="0.033252"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-05T17:00:46.774547" level="INFO">Clicking element 'xpath://div[@data-qa-id="slot_time"]'.</msg>
+<arg>xpath://div[@data-qa-id="slot_time"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-05T17:00:46.774338" elapsed="0.041946"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-05T17:00:56.818435" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-05T17:00:46.816558" elapsed="10.002088"/>
+</kw>
+<status status="PASS" start="2024-07-05T17:00:46.740597" elapsed="10.078526"/>
+</test>
+<status status="PASS" start="2024-07-05T17:00:38.185122" elapsed="18.634855"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Tc">Tc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
